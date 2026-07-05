@@ -57,21 +57,21 @@ const menuCategories = [
         desc: "Biji pilihan, tekanan sempurna. Pekat, bold, tanpa kompromi.",
         price: "Rp 28.000",
         icon: Coffee,
-        img: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu1.jpg",
       },
       {
         name: "Tobi Latte",
         desc: "Espresso berpadu susu steamed — harmoni lembut yang panjang.",
         price: "Rp 38.000",
         icon: Droplets,
-        img: "https://images.unsplash.com/photo-1561882468-9110d70d2a78?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu2.jpg",
       },
       {
         name: "Filter Coffee",
         desc: "Manual brew slow pour. Nuansa floral dan fruity yang elegan.",
         price: "Rp 35.000",
         icon: Leaf,
-        img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu3.jpg",
       },
     ],
   },
@@ -83,21 +83,21 @@ const menuCategories = [
         desc: "Espresso diencerkan air panas. Bersih, to the point, tanpa berlebihan.",
         price: "Rp 25.000",
         icon: Coffee,
-        img: "https://images.unsplash.com/photo-1551030173-122aabc4489c?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu4.jpg",
       },
       {
         name: "Cappuccino",
         desc: "Perpaduan espresso, susu panas, dan milk foam yang seimbang.",
         price: "Rp 34.000",
         icon: Zap,
-        img: "https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu5.jpg",
       },
       {
         name: "Flat White",
         desc: "Lebih pekat dari latte, lebih lembut dari cappuccino.",
         price: "Rp 36.000",
         icon: Sun,
-        img: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu6.jpg",
       },
     ],
   },
@@ -109,21 +109,21 @@ const menuCategories = [
         desc: "Matcha premium Jepang dengan susu segar lokal. Segar dan earthy.",
         price: "Rp 36.000",
         icon: Leaf,
-        img: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu7.jpg",
       },
       {
         name: "Tobi Choco",
         desc: "Dark chocolate blend dengan susu full cream. Klasik tanpa alasan.",
         price: "Rp 32.000",
         icon: Droplets,
-        img: "https://images.unsplash.com/photo-1542990253-a781e216b1c2?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu8.jpg",
       },
       {
         name: "Lemon Ginger",
         desc: "Segar, hangat, dan menyegarkan. Tanpa kafein, penuh rasa.",
         price: "Rp 28.000",
         icon: Sun,
-        img: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80&auto=format&fit=crop",
+        img: "/images/menu9.jpg",
       },
     ],
   },
@@ -131,34 +131,52 @@ const menuCategories = [
 
 const galleryItems = [
   {
-    img: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80&auto=format&fit=crop",
+    img: "/images/tempat1.jpg",
     label: "Indoor Nyaman",
     span: "col-span-2 row-span-2",
-    height: "h-80",
+    height: "h-[380px]",
   },
   {
-    img: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80&auto=format&fit=crop",
+    img: "/images/tempat2.jpg",
     label: "Suasana Pagi",
     span: "",
-    height: "h-36",
+    height: "h-[183px]",
   },
   {
-    img: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80&auto=format&fit=crop",
+    img: "/images/tempat3.jpg",
     label: "Outdoor Area",
     span: "",
-    height: "h-36",
+    height: "h-[183px]",
   },
   {
-    img: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80&auto=format&fit=crop",
+    img: "/images/tempat4.jpg",
     label: "Cozy Corner",
     span: "",
-    height: "h-36",
+    height: "h-[183px]",
   },
   {
-    img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80&auto=format&fit=crop",
+    img: "/images/tempat5.jpg",
     label: "Bar Area",
     span: "",
-    height: "h-36",
+    height: "h-[183px]",
+  },
+  {
+    img: "/images/tempat6.jpg",
+    label: "Area Komunitas",
+    span: "col-span-2",
+    height: "h-[183px]",
+  },
+  {
+    img: "/images/tempat7.jpg",
+    label: "Sudut Tenang",
+    span: "",
+    height: "h-[183px]",
+  },
+  {
+    img: "/images/tempat8.jpg",
+    label: "Fasad Depan",
+    span: "",
+    height: "h-[183px]",
   },
 ];
 
@@ -605,7 +623,7 @@ export default function KopiTobiPage() {
                 {/* Tall left */}
                 <div className="rounded-3xl overflow-hidden row-span-2 h-80">
                   <img
-                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80&auto=format&fit=crop"
+                    src="/images/tempat2.jpg"
                     alt="Barista sedang menyeduh kopi"
                     className="w-full h-full object-cover"
                   />
@@ -613,7 +631,7 @@ export default function KopiTobiPage() {
                 {/* Top right */}
                 <div className="rounded-3xl overflow-hidden h-[152px]">
                   <img
-                    src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=500&q=80&auto=format&fit=crop"
+                    src="/images/tempat1.jpg"
                     alt="Seduhan kopi filter"
                     className="w-full h-full object-cover"
                   />
@@ -621,7 +639,7 @@ export default function KopiTobiPage() {
                 {/* Bottom right */}
                 <div className="rounded-3xl overflow-hidden h-[152px]">
                   <img
-                    src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=500&q=80&auto=format&fit=crop"
+                    src="/images/tempat3.jpg"
                     alt="Suasana kafe Kopi Tobi"
                     className="w-full h-full object-cover"
                   />
@@ -870,8 +888,8 @@ export default function KopiTobiPage() {
                   {/* Large — top left, spans 2 cols and 2 rows */}
                   <div className="col-span-2 row-span-2 rounded-3xl overflow-hidden h-[380px] relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=900&q=80&auto=format&fit=crop"
-                      alt="Indoor area Kopi Tobi"
+                      src="/images/tempat1.jpg"
+                      alt="Indoor Nyaman"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
@@ -887,8 +905,8 @@ export default function KopiTobiPage() {
                   {/* Top right 1 */}
                   <div className="rounded-3xl overflow-hidden h-[183px] relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80&auto=format&fit=crop"
-                      alt="Suasana pagi kafe"
+                      src="/images/tempat2.jpg"
+                      alt="Suasana Pagi"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/55 to-transparent">
@@ -901,8 +919,8 @@ export default function KopiTobiPage() {
                   {/* Top right 2 */}
                   <div className="rounded-3xl overflow-hidden h-[183px] relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80&auto=format&fit=crop"
-                      alt="Area outdoor kafe"
+                      src="/images/tempat3.jpg"
+                      alt="Outdoor Area"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/55 to-transparent">
@@ -915,8 +933,8 @@ export default function KopiTobiPage() {
                   {/* Bottom right 1 */}
                   <div className="rounded-3xl overflow-hidden h-[183px] relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80&auto=format&fit=crop"
-                      alt="Cozy corner kafe"
+                      src="/images/tempat4.jpg"
+                      alt="Cozy Corner"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/55 to-transparent">
@@ -929,13 +947,55 @@ export default function KopiTobiPage() {
                   {/* Bottom right 2 */}
                   <div className="rounded-3xl overflow-hidden h-[183px] relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80&auto=format&fit=crop"
-                      alt="Bar area kafe"
+                      src="/images/tempat5.jpg"
+                      alt="Bar Area"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/55 to-transparent">
                       <span className="text-white font-semibold text-xs">
                         Bar Area
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Bottom Extra 1 (span 2) */}
+                  <div className="col-span-2 rounded-3xl overflow-hidden h-[183px] relative group">
+                    <img
+                      src="/images/tempat6.jpg"
+                      alt="Area Komunitas"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/55 to-transparent">
+                      <span className="text-white font-semibold text-xs">
+                        Area Komunitas
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Bottom Extra 2 */}
+                  <div className="rounded-3xl overflow-hidden h-[183px] relative group">
+                    <img
+                      src="/images/tempat7.jpg"
+                      alt="Sudut Tenang"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/55 to-transparent">
+                      <span className="text-white font-semibold text-xs">
+                        Sudut Tenang
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Bottom Extra 3 */}
+                  <div className="rounded-3xl overflow-hidden h-[183px] relative group">
+                    <img
+                      src="/images/tempat8.jpg"
+                      alt="Fasad Depan"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/55 to-transparent">
+                      <span className="text-white font-semibold text-xs">
+                        Fasad Depan
                       </span>
                     </div>
                   </div>
