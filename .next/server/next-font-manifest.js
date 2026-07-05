@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/mochsugihnugraha/Downloads/kopitobi/app/layout\":[\"static/media/13971731025ec697-s.p.woff2\",\"static/media/8925faf4c5f0f476-s.p.ttf\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

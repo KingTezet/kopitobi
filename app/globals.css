@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #fafaf9;
+  --color-brand-white: #ffffff;
+  --color-brand-ink: #010101;
+  --color-brand-orange: #f38d10;
+  --color-brand-brown: #69594a;
+  --color-brand-coral: #ff6249;
+
+  --font-display: var(--font-more-sugar), serif;
+  --font-body: var(--font-dm-sans), system-ui, sans-serif;
+
+  --radius-card: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-ink);
+  margin: 0;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Glassmorphism navbar */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Card base */
+.card {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+/* Hover lift */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu card hover */
+.menu-card:hover .menu-icon {
+  color: var(--color-brand-orange);
+  transform: scale(1.15);
+}
+
+.menu-icon {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Smooth all transitions */
+a,
+button {
+  transition: all 0.2s ease;
+}
